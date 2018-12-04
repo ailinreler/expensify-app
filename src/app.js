@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import { Provider } from 'react-redux';
-
-
+// importamos el css de datepicker
+import 'react-dates/lib/css/_datepicker.css';
 
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
@@ -13,7 +13,6 @@ import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } fro
 import getVisibleExpenses from './selectors/expenses';
 
 const store = configureStore();
-
 // store.dispatch(addExpense({description:'Gas Bill', amount: 1000}));
 // store.dispatch(addExpense({description:'Water Bill', amount: 700, createdAt: 1000}));
 // store.dispatch(addExpense({description:'Rent', amount: 109500}));
