@@ -8,10 +8,14 @@
     "test": "jest --config=jest.config.json",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "AikiCode",
   "license": "ISC",
+  "dependencies":{
+    "express": "^4.16.4"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
