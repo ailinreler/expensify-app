@@ -5,6 +5,7 @@ import './styles/styles.scss';
 import { Provider } from 'react-redux';
 // importamos el css de datepicker
 import 'react-dates/lib/css/_datepicker.css';
+import './firebase/firebase';
 
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
